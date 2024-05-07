@@ -16,11 +16,10 @@ class SiteTreeExtension extends Extension
             return;
         }
 
-        if(Environment::hasEnv($varname)) {
-            $base_url = Environment::getEnv($varname);
+        if($base_url = Environment::getEnv($varname)) {
+            
             $base_url = rtrim($base_url, "/"); //remove trailing slashes
-            //$base_parts = parse_url($base_url);
-
+            
             $current_url = $_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME'];
             
             if(!str_starts_with($base_url, $current_url)) {
@@ -33,3 +32,4 @@ class SiteTreeExtension extends Extension
     }
 
 }
+
