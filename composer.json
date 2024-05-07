@@ -1,0 +1,17 @@
+{
+	"name": "icecaster/silverstripe-domainredirect",
+	"description": "",
+	"type": "silverstripe-vendormodule",
+	"keywords": ["silverstripe"],
+	"homepage": "https://github.com/",
+	"license": "BSD-3-Clause",
+	"authors": [{
+		"name": "Tim Klein",
+		"email": "tim@dodat.co.nz"
+	}],
+	"require": {
+		"silverstripe/framework": "^4 || ^5"
+	},
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

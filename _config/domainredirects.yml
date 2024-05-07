@@ -1,0 +1,8 @@
+---
+Name: domainredirects
+Only:
+  classexists: SilverStripe\CMS\Model\SiteTree
+---
+SilverStripe\CMS\Model\SiteTree:
+  extensions:
+    - Icecaster\DomainRedirect\Extensions\SiteTreeExtension
